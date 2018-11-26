@@ -1,5 +1,5 @@
 ARG gcp_project=basezero-dev
-FROM gcr.io/${gcp_project}/python:master
+FROM gcr.io/${gcp_project}/python-alpine:master
 
 LABEL maintainer="Luke Childs <lukechilds123@gmail.com>"
 
