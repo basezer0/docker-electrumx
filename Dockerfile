@@ -1,4 +1,6 @@
-FROM python:3.6-alpine3.6
+ARG gcp_project=basezero-dev
+FROM gcr.io/${gcp_project}/python:master
+
 LABEL maintainer="Luke Childs <lukechilds123@gmail.com>"
 
 COPY ./bin /usr/local/bin
